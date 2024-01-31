@@ -1,0 +1,35 @@
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh; /* 100% da altura da viewport */
+  overflow: hidden; /* Evita que as imagens ultrapassem os limites da tela */
+}
+
+.image {
+  width: 50%; /* Cada imagem ocupa metade da largura da tela */
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem cubra completamente o contêiner */
+  transform: scaleX(-1); /* Inverte a imagem horizontalmente */
+}
+
+.flipped {
+    transform: scaleX(1); /* Inverte a imagem horizontalmente */
+  }
+
+/* Caso queira centralizar as imagens verticalmente */
+.container {
+  align-items: center;
+}
+
+.video1 {
+    width: 750px;
+    margin:0 auto;
+    display: block;
+}
